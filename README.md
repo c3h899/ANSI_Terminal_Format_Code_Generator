@@ -1,9 +1,9 @@
 # ANSI terminal format code generator
 Run time library to generate ANSI terminal format codes for the purpose of generated formatted text within a supporting terminal's output. Support for black, blue, cyan, green, grey, magenta, red, white, and yellow colored foreground text and background are supported. Additionally, text may be specified to have blink, bold, dim, hidden, inverted, light, and underlined format modifiers.
 
-The code generates the necessay prefix to be inserted in prior to the desired formatted content, and the necessary format suffix to reset the ouputting. Format modifiers may be used in any combination, only one foreground, and only one background color are supported at a time. Specifying more than foreground or background color will have undefined behavior.
+The code generates the necessary prefix to be inserted in prior to the desired formatted content, and the necessary format suffix to reset the outputting. Format modifiers may be used in any combination, only one foreground, and only one background color are supported at a time. Specifying more than one foreground or background color will have undefined behavior.
 
-A string string containing format descriptors is parsed using:
+A string containing format descriptors is parsed using:
 
 ````cpp
 ctrm::format_code(string)
@@ -45,4 +45,4 @@ Use upper case for background, lowercase for foreground
 
 ## Addition notes:
 - Unless dynamic behavior is deeply needed, generating the necessary codes once, then caching the results is recommended.
-- Rebinding the format codes may be achieved by editing only the headder and recompiling.
+- Rebinding the format codes may be achieved by editing only the header and recompiling.
