@@ -44,5 +44,5 @@ Light '^'
 Underlined '_'
 
 ## Addition notes:
--Unless dynamic behavior is deeply needed, generating the necessary codes once, then caching the results is recommended.
--Rebinding the format codes may be achieved by editing only the headder and recompiling.
+- Unless dynamic behavior is deeply needed, generating the necessary codes once, then caching the results is recommended.
+- Rebinding the format codes may be achieved by editing only the headder and recompiling.
