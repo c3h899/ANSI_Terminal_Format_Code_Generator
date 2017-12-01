@@ -23,25 +23,25 @@ See ansi_term.hpp for format codes (subject to change). As of writing:
 
 ## Color
 Use upper case for background, lowercase for foreground
-Black 'K'
-Blue 'B'
-Cyan 'C'
-Green 'G'
-Grey, Dark 'D'
-Grey, Light 'L'
-Magenta 'M'
-Red 'R'
-White 'W'
-Yellow 'Y'
+* Black 'K'
+* Blue 'B'
+* Cyan 'C'
+* Green 'G'
+* Grey, Dark 'D'
+* Grey, Light 'L'
+* Magenta 'M'
+* Red 'R'
+* White 'W'
+* Yellow 'Y'
 
 ## Format Modifiers
-Blink '%'
-Bold '#'
-Dim '$'
-Hidden '*'
-Inverted '!'
-Light '^'
-Underlined '_'
+* Blink '%'
+* Bold '#'
+* Dim '$'
+* Hidden '*'
+* Inverted '!'
+* Light '^'
+* Underlined '_'
 
 ## Addition notes:
 - Unless dynamic behavior is deeply needed, generating the necessary codes once, then caching the results is recommended.
