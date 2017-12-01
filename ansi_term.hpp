@@ -38,7 +38,7 @@ namespace ctrm{
 		fg_white = 'w',
 		fg_yellow = 'y'
 	};
-	std::string reset(int c = '\0');
+	std::string reset(unsigned char c = '\0');
 	std::string tformat(std::string s);
 }
 
