@@ -53,7 +53,7 @@ enum colors {
 /* =========================== */
 
 /* Generate Appropriate reset code for single behavior */
-std::string ctrm::reset(int c){
+std::string ctrm::reset(unsigned char c){
 	std::string prefix = str_esc + "2";
 	switch(c){
 		case blink : prefix += str_blink + "m"; break;
