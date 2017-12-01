@@ -15,7 +15,7 @@ Format reset codes are less thoroughly supported by:
 
 ````cpp
 ctrm::reset(unsigned char c = '\0')
-````cpp
+````
 
 Without manual specification of c, the function will default to reset all formatting. Alternatively, a single format modifier may be reset by specifying the format modifier by format code.
 
@@ -42,3 +42,7 @@ Hidden '*'
 Inverted '!'
 Light '^'
 Underlined '_'
+
+## Addition notes:
+-Unless dynamic behavior is deeply needed, generating the necessary codes once, then caching the results is recommended.
+-Rebinding the format codes may be achieved by editing only the headder and recompiling.
