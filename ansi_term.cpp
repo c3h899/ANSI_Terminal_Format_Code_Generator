@@ -34,7 +34,7 @@ const std::string str_yellow = "3";
 /* =========================== */
 
 /* ====== MORE CONSTANTS ===== */
-enum format : unsigned char{
+enum format : unsigned int{ // Bitwise operations will promote to int (or unsigned int) -Wconversion
 	e_null = 0x00,
 	e_blink = 0x01,
 	e_bold = 0x02,
@@ -72,10 +72,10 @@ std::string ctrm::tformat(std::string s){
 	std::string format = str_esc;
 	
 	// Reduce format string to unique input
-	unsigned char bg = e_null;
-	unsigned char bg_format = 0;
-	unsigned char fg = e_null;
-	unsigned char fg_format = 0;
+	unsigned int bg = e_null;
+	unsigned int bg_format = 0;
+	unsigned int fg = e_null;
+	unsigned int fg_format = 0;
 	
 	auto ii = 0;
 	while( (s[ii] != '\0') && (ii < 9) ){
